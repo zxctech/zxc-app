@@ -4,9 +4,11 @@ phases:
   pre_build:
     commands:
       #installs dependencies into the node_modules/ directory
+      - cd /home/ec2-user/server/app
       - npm install
   build:
     commands:
+      - cd /home/ec2-user/server/app
       - echo Build started on `date`
       - echo Compiling
       - npm run build
@@ -16,9 +18,9 @@ phases:
 # Include only the files required for your application to run.
 artifacts:
   files:
-    - app/public/**/*
+    - app/build/**/*
     - app/src/**/*
     - app/package.json
-    - app/appspec.yml
+    - appspec.yml
     - scripts/**/*
     - pm2.config.js
