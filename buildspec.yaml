@@ -18,9 +18,12 @@ phases:
 artifacts:
   files:
     - app/build/**/*
+    - app/public/**/*
     - app/src/**/*
+    - app/.env
     - app/server.js
     - app/package.json
+    - tsconfig.json
     - appspec.yml
     - scripts/**/*
     - pm2.config.js
