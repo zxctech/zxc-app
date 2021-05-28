@@ -19,6 +19,7 @@ artifacts:
   files:
     - app/build/**/*
     - app/src/**/*
+    - app/server.js
     - app/package.json
     - appspec.yml
     - scripts/**/*
