@@ -8,7 +8,6 @@ phases:
       - npm install
   build:
     commands:
-      - cd app
       - echo Build started on `date`
       - echo Compiling
       - npm run build
