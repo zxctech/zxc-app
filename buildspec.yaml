@@ -4,11 +4,11 @@ phases:
   pre_build:
     commands:
       #installs dependencies into the node_modules/ directory
-      - cd /home/ec2-user/server/app
+      - cd app
       - npm install
   build:
     commands:
-      - cd /home/ec2-user/server/app
+      - cd app
       - echo Build started on `date`
       - echo Compiling
       - npm run build
